@@ -23,7 +23,7 @@ Your printTable() function would print the following:
 
 
 def printTable(table):
-    # determine max column widths
+    # determine max column widths from each list item
     max_width = []
     for eachlist in table:
         col_width = 0
