@@ -27,24 +27,16 @@ def printTable(table):
     max_width = []
     for eachlist in table:
         col_width = 0
-        list_length = len(eachlist)  # to be used in transpose table
         for item in eachlist:
             col_width = max(col_width, len(item))
         max_width.append(col_width)
 
-    # transpose table
-    transpose_table = []
-    for listindex in range(list_length):
-        item_list = []
-        for tableindex, eachlist in enumerate(table):
-            item_list.append(table[tableindex][listindex])
-        transpose_table.append(item_list)
-
-    # print out formatted transpose table
-    for eachlist in transpose_table:
-        for index, item in enumerate(eachlist):
-            print(item.rjust(max_width[index] + 1), end='')
+    # transpose table and print formatted table items
+    for col in range(len(table[0])):  # assume that all lists in table are of equal length
+        for row in range(len(table)):
+            print(table[row][col].rjust(max_width[row] + 1), end='')
         print()
+
 
 tableData = [['apples', 'oranges', 'cherries', 'banana'],
              ['Alice', 'Bob', 'Carol', 'David'],
