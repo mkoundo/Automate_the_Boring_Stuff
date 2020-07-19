@@ -18,36 +18,50 @@ chess board.
 """
 
 
-def isValidChessBoard(dict):
-    # check number/colour of pieces
-    piece_colour = ('b', 'w')
-    for colour in piece_colour:
+def isValidChessBoard(piecedict):
+    # Check number/colour of pieces are valid
+    for colour in ('b', 'w'):
         pieces_list = []
-        for value in dict.values():
+        for value in piecedict.values():
+            if value[0] != 'b' and value[0] != 'w': return False  # Check piece colour is valid.
             if value[0] == colour: pieces_list.append(value[1:])
-        if not isPieceValid(pieces_list): return False
+        if not isPieceValid(pieces_list): return False  # Check number of pieces and their names.
 
-    # check if all piece positions are valid
+    # Check if all piece positions are valid
     board_rows = [1, 2, 3, 4, 5, 6, 7, 8]
     board_cols = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
     all_board_positions = set()
-    board_positions = set(dict.keys())
+    board_positions = set(piecedict.keys())
     for row in range(8):
         for col in range(8):
             all_board_positions.add(str(board_rows[row]) + board_cols[col])
-    return board_positions.issubset(all_board_positions)
+    return board_positions.issubset(all_board_positions)    # Check position.
 
 
 def isPieceValid(piece_list):
+    # Count number of pieces amd piece names in given piece list are valid.
     piece_dict = {'king': 1, 'queen': 1, 'knight': 2, 'bishop': 2, 'rook': 2, 'pawn': 8}
-    # count each piece in the given piece list
     board_piece_list = []
+    for piece in piece_list:
+        if not piece_dict.get(piece, 0): return False   # Check piece name is valid.
     for piece in piece_dict.keys():
         board_piece_list.append(piece_list.count(piece))
-        if board_piece_list[-1] > piece_dict[piece]: return False
+        if board_piece_list[-1] > piece_dict[piece]: return False  # Check number of pieces are valid.
     return True
 
 
+# valid chessboard
 chessboard = {'1h': 'bking', '6c': 'wqueen', '2g': 'bbishop', '5h': 'bqueen', '3e': 'wking'}
+print(isValidChessBoard(chessboard))
 
+# invalid chessboard because invalid colour for item '6e': 'zking'
+chessboard = {'1h': 'bking', '6c': 'wqueen', '2g': 'bbishop', '5h': 'bqueen', '3e': 'wking', '6e': 'zking'}
+print(isValidChessBoard(chessboard))
+
+# invalid chessboard because invalid number of pieces: 2 white queens
+chessboard = {'1h': 'bking', '6c': 'wqueen', '2g': 'bbishop', '5h': 'bqueen', '3e': 'wking', '6e': 'wqueen'}
+print(isValidChessBoard(chessboard))
+
+# invalid chessboard because invalid piece name: '6e': 'wqqueen'
+chessboard = {'1h': 'bking', '6c': 'wqueen', '2g': 'bbishop', '5h': 'bqueen', '3e': 'wking', '6e': 'wqqueen'}
 print(isValidChessBoard(chessboard))
