@@ -1,1 +1,4 @@
+PyInputPlus==0.2.10
 pyperclip==1.8.0
+PySimpleValidate==0.2.12
+stdiomask==0.0.5
