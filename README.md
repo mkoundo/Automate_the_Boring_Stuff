@@ -3,6 +3,9 @@
 By Al Sweigart. Free to read online [here](https://automatetheboringstuff.com/).
 
  A collection of mini projects and tutorials coded in Python3, found in Automating the Boring Stuff.
+ 
+ To install the additional packages required, run:
+*pip install -r requirements.txt*
 ## Chapter 3 - Functions
 [collatz.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_3-Functions/collatz.py) - The Collatz Sequence
 Write a function named collatz() that has one parameter named number. If number is even,
