@@ -2,14 +2,12 @@
 
 By Al Sweigart. Free to read online [here](https://automatetheboringstuff.com/). ![Cover Image](cover.png)
 
- A collection of mini projects and tutorials coded in Python3, found in Automating the Boring Stuff.
+ A collection of mini projects coded in Python3, found in Automating the Boring Stuff with Python.
  
  To install the additional packages required, run:
 *pip install -r requirements.txt*
 ## Chapter 3 - Functions
-[collatz.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_3-Functions/collatz.py) - The Collatz Sequence
-Write a function named collatz() that has one parameter named number. If number is even,
-then collatz() should print number // 2 and return this value. If number is odd, then collatz() should print and return (3 * number) + 1.
+[collatz.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_3-Functions/collatz.py) - Write a function named collatz() that has one parameter named number. If number is even, then collatz() should print number // 2 and return this value. If number is odd, then collatz() should print and return (3 * number) + 1.
 
 ## Chapter 4 - Lists
  [coin_flip.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_4-Lists/coin_flip.py) - For this exercise, we’ll try doing an experiment. If you flip a coin 100 times and write down an “H” for each heads and “T” for each tails, you’ll create a list that looks like “T T T T H H H H T T”. Write a program to find out how often a streak of six heads or a streak of six tails comes up in a randomly generated list of heads and tails. Your program breaks up the experiment into two parts: the first part generates a list of randomly selected 'heads' and 'tails' values, and the second part checks if there is a streak in it. Put all of this code in a loop that repeats the experiment 10,000 times so we can find out what percentage of the coin flips contains a streak of six heads or tails in a row. As a hint, the function call random.randint(0, 1) will return a 0 value 50% of the time and a 1 value the other 50% of the time.
