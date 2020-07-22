@@ -1,6 +1,6 @@
 # Automating the Boring Stuff with Python
 
-By Al Sweigart. Free to read online [here](https://automatetheboringstuff.com/).
+By Al Sweigart. Free to read online [here](https://automatetheboringstuff.com/). ![Cover Image](cover.png)
 
  A collection of mini projects and tutorials coded in Python3, found in Automating the Boring Stuff.
  
