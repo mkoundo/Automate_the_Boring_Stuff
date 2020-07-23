@@ -36,9 +36,9 @@ def main():
     for file in filelist:
         print('\n' + str(file))
         with open(str(file), 'r') as textfile:
-            for linenumber, line in enumerate(textfile):
+            for linenumber, line in enumerate(textfile, 1):
                 match = re.search(regex, line)
-                if match is not None: print(f'Line: {linenumber+1} found: {match.group()}')
+                if match is not None: print(f'Line: {linenumber} found: {match.group()}')
 
 
 if __name__ == '__main__':
