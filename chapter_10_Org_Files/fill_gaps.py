@@ -1,6 +1,6 @@
 #! python3
 # fill_gaps.py
-# Author: MIchael Koundouros
+# Author: Michael Koundouros
 """
 Ref: Chapter 10 - Organising Files
 Ref: Automate the Boring Stuff with Python, Al Sweigart, 2nd Ed., 2019
