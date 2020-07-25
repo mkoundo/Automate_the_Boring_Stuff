@@ -109,3 +109,13 @@ The following text file would then be created:
 >The silly panda walked to the chandelier and then screamed. A nearby pickup truck was unaffected by these events.
 
 The results should be printed to the screen and saved to a new text file.
+## Chapter 10 - Organising Files
+[del_unneeded.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_10_Org_Files/del_unneeded.py) - It’s not uncommon for a few unneeded but humongous files or folders to take up the bulk of the space on your hard drive. If you’re trying to free up room on your computer, you’ll get the most bang for your buck by deleting the most massive of the unwanted files. But first you have to find them.
+Write a program that walks through a folder tree and searches for exceptionally large files or folders—say, ones that have a file size of more than 100MB. (Remember that to get a file’s size, you can use os.path.getsize() from the os module.) Print these files with their absolute path to the screen.
+
+[fill_gaps.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_10_Org_Files/fill_gaps.py) - Write a program that finds all files with a given prefix, such as spam001.txt, spam002.txt, and so on, in a single folder and locates any gaps in the numbering (such as if there is a spam001.txt and spam003.txt but no spam002.txt).
+Have the program rename all the later files to close this gap.
+
+As an added challenge, write another program that can insert gaps into numbered files so that a new file can be added.
+
+[sel_copy.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_10_Org_Files/sel_copy.py) - Write a program that walks through a folder tree and searches for files with a certain file extension (such as .pdf or .jpg). Copy these files from whatever location they are in to a new folder.
