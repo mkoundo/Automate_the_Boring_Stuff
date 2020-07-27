@@ -2,7 +2,6 @@
 Ref: Chapter 4 - Lists
 Ref: Automate the Boring Stuff with Python, Al Sweigart, 2nd Ed., 2019
 Author: Michael Koundouros
-        michael.koundouros@outlook.com
         July 2020
 
 For this exercise, we’ll try doing an experiment. If you flip a coin 100 times and write down an “H” for each

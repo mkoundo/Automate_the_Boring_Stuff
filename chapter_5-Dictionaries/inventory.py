@@ -2,7 +2,6 @@
 Ref: Chapter 5 - Dictionaries
 Ref: Automate the Boring Stuff with Python, Al Sweigart, 2nd Ed., 2019
 Author: Michael Koundouros
-        michael.koundouros@outlook.com
         July 2020
 
 You are creating a fantasy video game. The data structure to model the player’s inventory will be a dictionary

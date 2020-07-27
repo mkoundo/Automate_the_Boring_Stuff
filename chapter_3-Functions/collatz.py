@@ -2,7 +2,6 @@
 Ref: Chapter 3 - Functions
 Ref: Automate the Boring Stuff with Python, Al Sweigart, 2nd Ed., 2019
 Author: Michael Koundouros
-        michael.koundouros@outlook.com
         July 2020
 
 The Collatz Sequence

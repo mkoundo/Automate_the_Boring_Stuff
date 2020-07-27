@@ -2,7 +2,6 @@
 Ref: Chapter 7 - Regular Expressions
 Ref: Automate the Boring Stuff with Python, Al Sweigart, 2nd Ed., 2019
 Author: Michael Koundouros
-        michael.koundouros@outlook.com
         July 2020
 
 Write a function that uses regular expressions to make sure the password string it is passed is strong. A strong

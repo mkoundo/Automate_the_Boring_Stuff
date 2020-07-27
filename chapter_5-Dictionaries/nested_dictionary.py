@@ -2,7 +2,6 @@
 Ref: Chapter 5 - Dictionaries
 Ref: Automate the Boring Stuff with Python, Al Sweigart, 2nd Ed., 2019
 Author: Michael Koundouros
-        michael.koundouros@outlook.com
         July 2020
 
 Here’s a program that uses a dictionary that contains other dictionaries of what items guests are bringing to a picnic.

@@ -2,7 +2,6 @@
 Ref: Chapter 5 - Dictionaries
 Ref: Automate the Boring Stuff with Python, Al Sweigart, 2nd Ed., 2019
 Author: Michael Koundouros
-        michael.koundouros@outlook.com
         July 2020
 
 Here is a short program that counts the number of occurrences of each letter in a string.

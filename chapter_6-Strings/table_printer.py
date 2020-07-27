@@ -2,7 +2,6 @@
 Ref: Chapter 6 - Manipulating Strings
 Ref: Automate the Boring Stuff with Python, Al Sweigart, 2nd Ed., 2019
 Author: Michael Koundouros
-        michael.koundouros@outlook.com
         July 2020
 
 Write a function named printTable() that takes a list of lists of strings and displays it in a well-organized
