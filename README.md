@@ -119,3 +119,16 @@ Have the program rename all the later files to close this gap.
 As an added challenge, write another program that can insert gaps into numbered files so that a new file can be added.
 
 [sel_copy.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_10_Org_Files/sel_copy.py) - Write a program that walks through a folder tree and searches for files with a certain file extension (such as .pdf or .jpg). Copy these files from whatever location they are in to a new folder.
+## Chapter 11 - Debugging
+[coin_toss.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_11_Debugging/coin_toss.py) - he following program is meant to be a simple coin toss guessing game. The player gets two guesses (it’s an easy game). However, the program has several bugs in it. Run through the program a few times to find the bugs that keep
+the program from working correctly.
+## Chapter 12 - Web Scraping
+[2048.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_12_Web_Scraping/2048.py) - 2048 is a simple game where you combine tiles by sliding them up, down, left, or right with the arrow keys. You can actually get a fairly high score by repeatedly sliding in an up, right, down, and left pattern over and over
+again. Write a program that will open the game at https://gabrielecirulli.github.io/2048/ and keep sending up, right, down, and left keystrokes to automatically play the game.
+
+[cl_emailer.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_12_Web_Scraping/cl_emailer.py) - Write a program that takes an email address and string of text on the command line and then, using selenium, logs in to your email account and sends an email of the string to the provided address. (You might want to set up a
+separate email account for this program.) This would be a nice way to add a notification feature to your programs. The webdriver used in this script is for Chrome and is available at https://chromedriver.chromium.org/downloads
+
+[image_downloader.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_12_Web_Scraping/image_downloader.py) - Write a program that goes to a photo-sharing site like Flickr or Imgur, searches for a category of photos, and then downloads all the resulting images. You could write a program that works with any photo site that has a search feature.
+
+[link_verification.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_12_Web_Scraping/link_verification.py) - Write a program that, given the URL of a web page, will attempt to download every linked page on the page. The program should flag any pages that have a 404 “Not Found” status code and print them out as broken links.
