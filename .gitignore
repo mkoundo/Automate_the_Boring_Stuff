@@ -1,3 +1,6 @@
 /.idea/
 /_online_material/
 /chapter_12_Web_Scraping/outlook.txt
+/chapter_14_Google_Sheets/credentials-sheets.json
+/chapter_14_Google_Sheets/token-drive.pickle
+/chapter_14_Google_Sheets/token-sheets.pickle
