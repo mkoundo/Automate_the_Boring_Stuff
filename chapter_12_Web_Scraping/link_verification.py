@@ -1,5 +1,5 @@
 #! python3
-# 2048.py
+# link_verification.py
 # Author: Michael Koundouros
 """
 Write a program that, given the URL of a web page, will attempt to download every linked page on the page. The

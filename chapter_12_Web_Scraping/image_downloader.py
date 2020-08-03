@@ -1,5 +1,5 @@
 #! python3
-# cl_emailer.py
+# image_downloader.py
 # Author: Michael Koundouros
 """
 Write a program that goes to a photo-sharing site like Flickr or Imgur, searches for a category of photos,
