@@ -32,3 +32,5 @@ for index, row in enumerate(all_cells):
         pass
 
 print('Done!')
+
+# Duff row at 14399
