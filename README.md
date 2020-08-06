@@ -149,7 +149,7 @@ use a for loop to copy the first N lines. For the remaining lines, add M to the 
 
 [multiplication_table.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_13_Excel/multiplication_table.py) - Create a program multiplicationTable.py that takes a number N from the command line and creates an N×N multiplication table in an Excel spreadsheet. 
 
-> usage python multiplication_table.py n
+> usage: python multiplication_table.py n
 
 [txt_2_xl.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_13_Excel/txt_2_xl.py) - Write a program to read in the contents of several text files (you can make the text files yourself) and insert those contents into a spreadsheet, with one line of text per row. The lines of the first text file will be in the cells of column A, the lines of the second text file will be in the cells of column B, and so on. Use the readlines() File object method to return a list of strings, one string per line in the file. For the first file, output the first line to column 1, row 1. The second line should be written to column 1, row 2, and so on. The next file that is read with readlines() will be written to column 2, the next file to column 3, and so on.
 
