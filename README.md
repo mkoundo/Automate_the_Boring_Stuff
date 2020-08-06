@@ -23,7 +23,7 @@ an empty list [] is passed to your function.
 ## Chapter 5 - Dictionaries
 [charactercount.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_5-Dictionaries/charactercount.py) - Here is a short program that counts the number of occurrences of each letter in a string.
 
-[inventory.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_5-Dictionaries/inventory.py) - You are creating a fantasy video game. The data structure to model the player’s inventory will be a dictionary where the keys are string values describing the item in the inventory and the value is an integer value detailing how many of that item the player has. For example, the dictionary value {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12} means the player has 1 rope, 6 torches, 42 gold coins, and so on.
+[inventory.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_5-Dictionaries/inventory.py) - You are creating a fantasy video game. The data structure to model the player’s inventory will be a dictionary where the keys are string values describing the item in the inventory and the value is an integer value detailing how many of that item the player has. For example, the dictionary value `{'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}` means the player has 1 rope, 6 torches, 42 gold coins, and so on.
 
 Write a function named displayInventory() that would take any possible “inventory” and display it like the following:
 Inventory:
@@ -34,11 +34,11 @@ Inventory:
 1 dagger
 Total number of items: 62
 
-[nested_dictionary.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_5-Dictionaries/nested_dictionary.py) - Here’s a program that uses a dictionary that contains other dictionaries of what items guests are bringing to a picnic. The totalBrought() function can read this data structure and calculate the total number of an item being brought by all the guests.
+[nested_dictionary.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_5-Dictionaries/nested_dictionary.py) - Here’s a program that uses a dictionary that contains other dictionaries of what items guests are bringing to a picnic. The `totalBrought()` function can read this data structure and calculate the total number of an item being brought by all the guests.
 
 [chess_validator.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_5-Dictionaries/chess_validator.py) - In this chapter, we used the dictionary value
-{'1h': 'bking', '6c': 'wqueen', '2g': 'bbishop', '5h': 'bqueen', '3e': 'wking'}
-to represent a chess board. Write a function named isValidChessBoard() that takes a dictionary argument and returns True or False depending on if the board is valid.
+`{'1h': 'bking', '6c': 'wqueen', '2g': 'bbishop', '5h': 'bqueen', '3e': 'wking'}`
+to represent a chess board. Write a function named `isValidChessBoard()` that takes a dictionary argument and returns True or False depending on if the board is valid.
 
 A valid board will have exactly one black king and exactly one white king. Each player can only have at most 16 pieces, at most 8 pawns, and all pieces must be on a valid space from '1a' to '8h'; that is, a piece can’t be on space '9z'. The piece names begin with either a 'w' or 'b' to represent white or black, followed by 'pawn',
 'knight', 'bishop', 'rook', 'queen', or 'king'. This function should detect when a bug has resulted in an improper chess board.
@@ -55,7 +55,7 @@ The regular expression doesn’t have to detect correct days for each month or f
 
 [strong_password.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_7-Regex/strong_password.py) - Write a function that uses regular expressions to make sure the password string it is passed is strong. A strong password is defined as one that is at least eight characters long, contains both uppercase and lowercase characters, and has at least one digit. You may need to test the string against multiple regex patterns to validate its strength.
 
-[strong_password_advanced.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_7-Regex/strong_password_advanced.py) - Similar to [strong_password.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_7-Regex/strong_password.py) except uses regex lookaheads.
+[strong_password_advanced.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_7-Regex/strong_password_advanced.py) - Similar to [strong_password.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_7-Regex/strong_password.py) with regex lookaheads.
 ## Chapter 8 - Input Validation
 [sandwich.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_8-Input_Validation/sandwich.py) - Write a program that asks users for their sandwich preferences. The program should use PyInputPlus to ensure that they enter valid input, such as:
 
@@ -83,14 +83,14 @@ This means the code will need to do the following:
 Read the command line arguments from sys.argv.
 Read and write to the clipboard.
 Save and load to a shelf file.
-
-> Usage:   
-> python mcb.pyw --save <keyword> - Saves clipboard to shelf file with keyword.  
-> python mcb.pyw \<keyword\> - Loads keyword from shelf to clipboard.  
-> python mcb.pyw --list - Loads all keywords from shelf to clipboard.  
-> python mcb.pyw --delete \<keyword\> - deletes keyword from shelf.  
-> python mcb.pyw --delete - deletes all keywords from shelf.
-
+```
+ Usage:   
+ python mcb.pyw --save <keyword> - Saves clipboard to shelf file with keyword.  
+ python mcb.pyw <keyword> - Loads keyword from shelf to clipboard.  
+ python mcb.pyw --list - Loads all keywords from shelf to clipboard.  
+ python mcb.pyw --delete <keyword> - deletes keyword from shelf.  
+ python mcb.pyw --delete - deletes all keywords from shelf.
+```
 [regex_search.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_9-Files/regex_search.py) - Write a program that opens all .txt files in a folder and searches for any line that matches a user-supplied regular expression. The results should be printed to the screen.
 
 [mad_libs.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_9-Files/mad_libs.py) - Create a Mad Libs program that reads in text files and lets the user add their own text anywhere the word ADJECTIVE, NOUN, ADVERB, or VERB appears in the text file. For example, a text file may look like this:
@@ -136,31 +136,31 @@ separate email account for this program.) This would be a nice way to add a noti
 [link_verification.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_12_Web_Scraping/link_verification.py) - Write a program that, given the URL of a web page, will attempt to download every linked page on the page. The program should flag any pages that have a 404 “Not Found” status code and print them out as broken links.
 ## Chapter 13 - Excel
 [blank_row_inserter.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_13_Excel/blank_row_inserter.py) - Create a program blank_row_inserter.py that takes two integers and a filename string as command line arguments. Let’s call the first integer N and the second integer M. Starting at row N, the program should insert M blank rows into the spreadsheet. This solution takes advantage of the built-in insert_rows() method.
-
-> usage: python blank_row_inserter.py row blank_rows file
-
+```
+ usage: python blank_row_inserter.py row blank_rows file
+```
 [blank_row_inserter_forloop.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_13_Excel/blank_row_inserter_forloop.py) - Create a program blank_row_inserter.py that takes two integers and a filename string as command line arguments. Let’s call the first integer N and the second integer M. Starting at row N, the program should insert M blank rows into the spreadsheet.
 You can write this program by reading in the contents of the spreadsheet. Then, when writing out the new spreadsheet,
 use a for loop to copy the first N lines. For the remaining lines, add M to the row number in the output spreadsheet.
-
-> usage: python blank_row_inserter_forloop.py row blank_rows file
-
+```
+ usage: python blank_row_inserter_forloop.py row blank_rows file
+```
 [cell_inverter.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_13_Excel/cell_inverter.py) - Write a program to invert the row and column of the cells in the spreadsheet. For example, the value at row 5, column 3 will be at row 3, column 5 (and vice versa). This should be done for all cells in the spreadsheet.
 
 [multiplication_table.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_13_Excel/multiplication_table.py) - Create a program multiplicationTable.py that takes a number N from the command line and creates an N×N multiplication table in an Excel spreadsheet. 
-
-> usage: python multiplication_table.py n
-
-[txt_2_xl.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_13_Excel/txt_2_xl.py) - Write a program to read in the contents of several text files (you can make the text files yourself) and insert those contents into a spreadsheet, with one line of text per row. The lines of the first text file will be in the cells of column A, the lines of the second text file will be in the cells of column B, and so on. Use the readlines() File object method to return a list of strings, one string per line in the file. For the first file, output the first line to column 1, row 1. The second line should be written to column 1, row 2, and so on. The next file that is read with readlines() will be written to column 2, the next file to column 3, and so on.
-
-> usage: python txt_2_xl.py file1 file2 file3 ...
-
+```
+ usage: python multiplication_table.py n
+```
+[txt_2_xl.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_13_Excel/txt_2_xl.py) - Write a program to read in the contents of several text files (you can make the text files yourself) and insert those contents into a spreadsheet, with one line of text per row. The lines of the first text file will be in the cells of column A, the lines of the second text file will be in the cells of column B, and so on. Use the `readlines()` File object method to return a list of strings, one string per line in the file. For the first file, output the first line to column 1, row 1. The second line should be written to column 1, row 2, and so on. The next file that is read with `readlines()` will be written to column 2, the next file to column 3, and so on.
+```
+ usage: python txt_2_xl.py file1 file2 file3 ...
+```
 where filen are text files
 
 [xl_2_txt.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_13_Excel/xl_2_txt.py) - Write a program that performs the tasks of txt_2_xl.py in reverse order: the program should open a spreadsheet and write the cells of column A into one text file, the cells of column B into another text file, and so on.
-
-> usage: python xl_2_txt.py file
-
+```
+ usage: python xl_2_txt.py file
+```
 where file is in xlsx format
 ## Chapter 14 - Google Sheets
 [bean_count.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_14_Google_Sheets/bean_count.py) - The columns of the first sheet in this [spreadsheet](https://docs.google.com/spreadsheets/d/1jDZEdvSIh4TmZxccyy0ZXrH-ELlrwq8_YYiZrEOB4jg/edit#gid=289119951) are “Beans per Jar,” “Jars,” and “Total Beans.” The “Total Beans” column is the product of the numbers in the “Beans per Jar” and “Jars” columns. However, there is a mistake in one of the 15,000 rows in this sheet. That’s too many rows to check by hand. Luckily, you can write a script that
@@ -171,36 +171,37 @@ As a hint, you can access the individual cells in a row with ss[0].getRow(rowNum
 
 evaluates to True if the row has the correct total. Put this code in a loop to identify which row in the sheet has the incorrect total.
 
-[convert_sheets.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_14_Google_Sheets/convert_sheets.py) - You can use Google Sheets to convert a spreadsheet file into other formats. Write a script that passes a submitted file to upload(). Once the spreadsheet has uploaded to Google Sheets, download it using downloadAsExcel(), downloadAsODS(), and other such functions to create a copy of the spreadsheet in these other formats.
-
-> usage: convert_sheets.py file
-
+[convert_sheets.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_14_Google_Sheets/convert_sheets.py) - You can use Google Sheets to convert a spreadsheet file into other formats. Write a script that passes a submitted file to `upload()`. Once the spreadsheet has uploaded to Google Sheets, download it using `downloadAsExcel(), downloadAsODS()`, and other such functions to create a copy of the spreadsheet in these other formats.
+```
+ usage: convert_sheets.py file
+```
 [form_data.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_14_Google_Sheets/form_data.py) - Google Forms allows you to create simple online forms that make it easy to collect information from people. The information they enter into the form is stored in a Google Sheet. For this project, write a program that can
 automatically download the form information that users have submitted. Go to [Google Forms](https://docs.google.com/forms/) and start a new form; it will be blank. Add fields to the form that ask the user for a name and email address. Then click the Send button in the upper right to get a link to your new form, such as [this](https://goo.gl/forms/QZsq5sC2Qe4fYO592/). Try to enter a few example responses into this form.
 
 On the “Responses” tab of your form, click the green Create Spreadsheet button to create a Google Sheets spreadsheet that will hold the responses that users submit. You should see your example responses in the first rows of this spreadsheet. Then write a Python script using EZSheets to collect a list of the email addresses on this spreadsheet.
 ## Chapter 15 - PDF and DOCX 
 [brute_force.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_15_PDF_DOCX/brute_force.py) - Brute force dictionary attack to decrypt a pdf file.
-
-> usage: python brute_force.py dictionary file
-
-[custom_invite.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_15_PDF_DOCX/custom_invite.py) - Write a program that would generate a Word document with custom invitations. Since Python-Docx can use only those styles that already exist in the Word document, you will have to first add these styles to a blank Word file and then open that file with Python-Docx. There should be one invitation per page in the resulting Word document, so call add_break() to add a page break after the last paragraph of each invitation. This way, you will need to open only one Word document to print all of the invitations at once.
-
-> usage: python custom_invite.py template guestlist
-
+```
+ usage: python brute_force.py dictionary file
+```
+[custom_invite.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_15_PDF_DOCX/custom_invite.py) - Write a program that would generate a Word document with custom invitations. Since Python-Docx can use only those styles that already exist in the Word document, you will have to first add these styles to a blank Word file and then open that file with Python-Docx. There should be one invitation per page in the resulting Word document, so call `add_break()` to add a page break after the last paragraph of each invitation. This way, you will need to open only one Word document to print all of the invitations at once.
+```
+ usage: python custom_invite.py template guestlist
+```
 [decrypt_pdf.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_15_PDF_DOCX/decrypt_pdf.py) - Write a program that finds all encrypted PDFs in a folder (and its subfolders) and creates a decrypted copy of the PDF using a provided password. If the password is incorrect, the program should print a message to the user and
 continue to the next PDF.
-
-> usage: python decrypt_pdf.py directory password
-
+```
+ usage: python decrypt_pdf.py directory password
+```
 [encrypt_pdf.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_15_PDF_DOCX/encrypt_pdf.py) - Write a script that will go through every PDF in a folder (and its subfolders) and encrypt the PDFs using a password provided on the command line. Save each encrypted PDF with an _encrypted.pdf suffix added to the original filename. Before deleting the original file, have the program attempt to read and decrypt the file to ensure that it was encrypted correctly.
-
-> usage: python encrypt_pdf.py directory password
+```
+ usage: python encrypt_pdf.py directory password
+```
 ## Chapter 16 - CSV and JSON
 [getopenweather.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_16_CSV_JSON/getopenweather.py) - This program retrieves weather data from OpenWeatherMap.org for a given location and prints the current weather and forecast for the next two days.
-
-> usage: python getopenweather.py city_name, 2-letter_country_code
-
+```
+ usage: python getopenweather.py city_name, 2-letter_country_code
+```
 [xl2csv.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_16_CSV_JSON/xl2csv.py) - Using the openpyxl module from Chapter 12, write a program that reads all the Excel files in the current working directory and outputs them as CSV files.
 
 A single Excel file might contain multiple sheets; you’ll have to create one CSV file per sheet. The filenames of the CSV files should be \<excel filename\>_\<sheet title\>.csv, where \<excel filename\> is the filename of the Excel file without the file extension (for example, 'spam_data', not 'spam_data.xlsx') and \<sheet title\> is the string from the
