@@ -9,7 +9,7 @@ By Al Sweigart. Free to read online [here](https://automatetheboringstuff.com/).
  To install the additional packages required, run:
 *pip install -r requirements.txt*
 ## Chapter 3 - Functions
-[collatz.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_3-Functions/collatz.py) - Write a function named collatz() that has one parameter named number. If number is even, then collatz() should print number // 2 and return this value. If number is odd, then collatz() should print and return  (3 * number) + 1.
+[collatz.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_3-Functions/collatz.py) - Write a function named `collatz()` that has one parameter named number. If number is even, then `collatz()` should print number // 2 and return this value. If number is odd, then `collatz()` should print and return  (3 * number) + 1.
 
 ## Chapter 4 - Lists
  [coin_flip.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_4-Lists/coin_flip.py) - For this exercise, we’ll try doing an experiment. If you flip a coin 100 times and write down an “H” for each heads and “T” for each tails, you’ll create a list that looks like “T T T T H H H H T T”. Write a program to find out how often a streak of six heads or a streak of six tails comes up in a randomly generated list of heads and tails. Your program breaks up the experiment into two parts: the first part generates a list of randomly selected 'heads' and 'tails' values, and the second part checks if there is a streak in it. Put all of this code in a loop that repeats the experiment 10,000 times so we can find out what percentage of the coin flips contains a streak of six heads or tails in a row. As a hint, the function call random.randint(0, 1) will return a 0 value 50% of the time and a 1 value the other 50% of the time.
@@ -25,7 +25,7 @@ an empty list [] is passed to your function.
 
 [inventory.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_5-Dictionaries/inventory.py) - You are creating a fantasy video game. The data structure to model the player’s inventory will be a dictionary where the keys are string values describing the item in the inventory and the value is an integer value detailing how many of that item the player has. For example, the dictionary value `{'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}` means the player has 1 rope, 6 torches, 42 gold coins, and so on.
 
-Write a function named displayInventory() that would take any possible “inventory” and display it like the following:
+Write a function named `displayInventory()` that would take any possible “inventory” and display it like the following:
 Inventory:
 12 arrow
 42 gold coin
@@ -45,13 +45,13 @@ A valid board will have exactly one black king and exactly one white king. Each 
 ## Chapter 6 - Strings
 [mclip.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_6-Strings/mclip.py) - A program with a command line argument provides a short key phrase — for instance, agree or busy. The message associated with that key phrase will be copied to the clipboard so that the user can paste it into an email. This way, the user can have long, detailed messages without having to retype them.
 
-[table_printer.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_6-Strings/table_printer.py) - Write a function named printTable() that takes a list of lists of strings and displays it in a well-organized table with each column right-justified. Assume that all the inner lists will contain the same number of strings.
+[table_printer.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_6-Strings/table_printer.py) - Write a function named `printTable()` that takes a list of lists of strings and displays it in a well-organized table with each column right-justified. Assume that all the inner lists will contain the same number of strings.
 ## Chapter 7 - Regular Expressions
 [date_detection.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_7-Regex/date_detection.py) - Write a regular expression that can detect dates in the DD/MM/YYYY format. Assume that the days range from 01 to 31, the months range from 01 to 12, and the years range from 1000 to 2999. Note that if the day or month is a single digit, it’ll have a leading zero. 
 
 The regular expression doesn’t have to detect correct days for each month or for leap years; it will accept nonexistent dates like 31/02/2020 or 31/04/2021. Then store these strings into variables named month, day, and year, and write additional code that can detect if it is a valid date. April, June, September, and November have 30 days, February has 28 days, and the rest of the months have 31 days. February has 29 days in leap years. Leap years are every year evenly divisible by 4, except for years evenly divisible by 100, unless the year is also evenly divisible by 400. Note how this calculation makes it impossible to make a reasonably sized regular expression that can detect a valid date.
 
-[regex_strip.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_7-Regex/regex_strip.py) - Write a function that takes a string and does the same thing as the strip() string method. If no other arguments are passed other than the string to strip, then whitespace characters will be removed from the beginning and end of the string. Otherwise, the characters specified in the second argument to the function will be removed from the string.
+[regex_strip.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_7-Regex/regex_strip.py) - Write a function that takes a string and does the same thing as the `strip()` string method. If no other arguments are passed other than the string to strip, then whitespace characters will be removed from the beginning and end of the string. Otherwise, the characters specified in the second argument to the function will be removed from the string.
 
 [strong_password.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_7-Regex/strong_password.py) - Write a function that uses regular expressions to make sure the password string it is passed is strong. A strong password is defined as one that is at least eight characters long, contains both uppercase and lowercase characters, and has at least one digit. You may need to test the string against multiple regex patterns to validate its strength.
 
@@ -59,12 +59,12 @@ The regular expression doesn’t have to detect correct days for each month or f
 ## Chapter 8 - Input Validation
 [sandwich.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_8-Input_Validation/sandwich.py) - Write a program that asks users for their sandwich preferences. The program should use PyInputPlus to ensure that they enter valid input, such as:
 
-Using inputMenu() for a bread type: wheat, white, or sourdough.
-Using inputMenu() for a protein type: chicken, turkey, ham, or tofu.
-Using inputYesNo() to ask if they want cheese.
-If so, using inputMenu() to ask for a cheese type: cheddar, Swiss, or mozzarella.
-Using inputYesNo() to ask if they want mayo, mustard, lettuce, or tomato.
-Using inputInt() to ask how many sandwiches they want. Make sure this number is 1 or more.
+Using `inputMenu()` for a bread type: wheat, white, or sourdough.  
+Using `inputMenu()` for a protein type: chicken, turkey, ham, or tofu.  
+Using `inputYesNo()` to ask if they want cheese.  
+If so, using `inputMenu()` to ask for a cheese type: cheddar, Swiss, or mozzarella.  
+Using `inputYesNo()` to ask if they want mayo, mustard, lettuce, or tomato.  
+Using `inputInt()` to ask how many sandwiches they want. Make sure this number is 1 or more.  
 
 Come up with prices for each of these options, and have your program display a total cost after the user enters their selection.
 ## Chapter 9 - Reading & Writing Files
@@ -113,7 +113,7 @@ The following text file would then be created:
 The results should be printed to the screen and saved to a new text file.
 ## Chapter 10 - Organising Files
 [del_unneeded.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_10_Org_Files/del_unneeded.py) - It’s not uncommon for a few unneeded but humongous files or folders to take up the bulk of the space on your hard drive. If you’re trying to free up room on your computer, you’ll get the most bang for your buck by deleting the most massive of the unwanted files. But first you have to find them.
-Write a program that walks through a folder tree and searches for exceptionally large files or folders—say, ones that have a file size of more than 100MB. (Remember that to get a file’s size, you can use os.path.getsize() from the os module.) Print these files with their absolute path to the screen.
+Write a program that walks through a folder tree and searches for exceptionally large files or folders—say, ones that have a file size of more than 100MB. (Remember that to get a file’s size, you can use `os.path.getsize()` from the os module.) Print these files with their absolute path to the screen.
 
 [fill_gaps.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_10_Org_Files/fill_gaps.py) - Write a program that finds all files with a given prefix, such as spam001.txt, spam002.txt, and so on, in a single folder and locates any gaps in the numbering (such as if there is a spam001.txt and spam003.txt but no spam002.txt).
 Have the program rename all the later files to close this gap.
@@ -135,7 +135,7 @@ separate email account for this program.) This would be a nice way to add a noti
 
 [link_verification.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_12_Web_Scraping/link_verification.py) - Write a program that, given the URL of a web page, will attempt to download every linked page on the page. The program should flag any pages that have a 404 “Not Found” status code and print them out as broken links.
 ## Chapter 13 - Excel
-[blank_row_inserter.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_13_Excel/blank_row_inserter.py) - Create a program blank_row_inserter.py that takes two integers and a filename string as command line arguments. Let’s call the first integer N and the second integer M. Starting at row N, the program should insert M blank rows into the spreadsheet. This solution takes advantage of the built-in insert_rows() method.
+[blank_row_inserter.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_13_Excel/blank_row_inserter.py) - Create a program blank_row_inserter.py that takes two integers and a filename string as command line arguments. Let’s call the first integer N and the second integer M. Starting at row N, the program should insert M blank rows into the spreadsheet. This solution takes advantage of the built-in `insert_rows()` method.
 ```
  usage: python blank_row_inserter.py row blank_rows file
 ```
