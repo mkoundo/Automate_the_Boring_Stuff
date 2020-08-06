@@ -2,7 +2,9 @@
 
 By Al Sweigart. Free to read online [here](https://automatetheboringstuff.com/). ![Cover Image](cover.png)
 
- A collection of mini projects coded in Python3, found in Automating the Boring Stuff with Python.
+ A collection of mini projects found in Automating the Boring Stuff with Python.
+ 
+ All coding done in Windows 10, **python 3.8.3**.
  
  To install the additional packages required, run:
 *pip install -r requirements.txt*
@@ -181,3 +183,29 @@ automatically download the form information that users have submitted. Go to htt
 https://goo.gl/forms/QZsq5sC2Qe4fYO592/. Try to enter a few example responses into this form.
 
 On the “Responses” tab of your form, click the green Create Spreadsheet button to create a Google Sheets spreadsheet that will hold the responses that users submit. You should see your example responses in the first rows of this spreadsheet. Then write a Python script using EZSheets to collect a list of the email addresses on this spreadsheet.
+## Chapter 15 - PDF and DOCX 
+[brute_force.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_15_PDF_DOCX/brute_force.py) - Brute force dictionary attack to decrypt a pdf file.
+
+usage: python brute_force.py dictionary file
+
+[custom_invite.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_15_PDF_DOCX/custom_invite.py) - Write a program that would generate a Word document with custom invitations. Since Python-Docx can use only those styles that already exist in the Word document, you will have to first add these styles to a blank Word file and then open that file with Python-Docx. There should be one invitation per page in the resulting Word document, so call add_break() to add a page break after the last paragraph of each invitation. This way, you will need to open only one Word document to print all of the invitations at once.
+
+usage: python custom_invite.py template guestlist
+
+[decrypt_pdf.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_15_PDF_DOCX/decrypt_pdf.py) - Write a program that finds all encrypted PDFs in a folder (and its subfolders) and creates a decrypted copy of the PDF using a provided password. If the password is incorrect, the program should print a message to the user and
+continue to the next PDF.
+
+usage: python decrypt_pdf.py directory password
+
+[encrypt_pdf.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_15_PDF_DOCX/encrypt_pdf.py) - Write a script that will go through every PDF in a folder (and its subfolders) and encrypt the PDFs using a password provided on the command line. Save each encrypted PDF with an _encrypted.pdf suffix added to the original filename. Before deleting the original file, have the program attempt to read and decrypt the file to ensure that it was encrypted correctly.
+
+usage: python encrypt_pdf.py directory password
+## Chapter 16 - CSV and JSON
+[getopenweather.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_16_CSV_JSON/getopenweather.py) - This program retrieves weather data from OpenWeatherMap.org for a given location and prints the current weather and forecast for the next two days.
+
+usage: python getopenweather.py city_name, 2-letter_country_code
+
+[xl2csv.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_16_CSV_JSON/xl2csv.py) - Using the openpyxl module from Chapter 12, write a program that reads all the Excel files in the current working directory and outputs them as CSV files.
+
+A single Excel file might contain multiple sheets; you’ll have to create one CSV file per sheet. The filenames of the CSV files should be \<excel filename\>_\<sheet title\>.csv, where \<excel filename\> is the filename of the Excel file without the file extension (for example, 'spam_data', not 'spam_data.xlsx') and \<sheet title\> is the string from the
+Worksheet object’s title variable.
