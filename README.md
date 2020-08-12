@@ -206,3 +206,24 @@ continue to the next PDF.
 
 A single Excel file might contain multiple sheets; you’ll have to create one CSV file per sheet. The filenames of the CSV files should be \<excel filename\>_\<sheet title\>.csv, where \<excel filename\> is the filename of the Excel file without the file extension (for example, 'spam_data', not 'spam_data.xlsx') and \<sheet title\> is the string from the
 Worksheet object’s title variable.
+## Chapter 17 - Time
+[pretty_stopwatch.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_17_Time/pretty_stopwatch.py) - A stopwatch program that:
+
+1. Tracks the amount of time elapsed between presses of the ENTER key, with each key press starting a new “lap” on the timer.
+2. Prints the lap number, total time, and lap time.
+## Chapter 18 - Email & SMS
+[auto_unsubscriber.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_18_Email_SMS/auto_unsubscriber.py) - Write a program that scans through your email account, finds all the unsubscribe links in all your emails, and automatically opens them in a browser. This program will have to log in to your email provider’s IMAP server and download all of your emails. You can use Beautiful Soup (covered in Chapter 12) to check for any instance where the
+word unsubscribe occurs within an HTML link tag. Once you have a list of these URLs, you can use `webbrowser.open()` to automatically open all of these links in a browser.
+
+[chore_emailer.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_18_Email_SMS/chore_emailer.py) - A program that takes a list of people’s email addresses and a list of chores that need to be done and randomly assigns chores to people. Email each person their assigned chores. If you’re feeling ambitious, keep a record of each person’s previously assigned chores so that you can make sure the program avoids assigning anyone the same chore they did last time. For another possible feature, schedule the program to run once a week automatically.
+
+[email_control.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_18_Email_SMS/email_control.py) - Write a program that checks an email account every 15 minutes for any instructions you email it and executes those instructions automatically. For example, BitTorrent is a peer-to-peer downloading system. Using free BitTorrent
+software such as qBittorrent, you can download large media files on your home computer. If you email the program a (completely legal, not at all piratical) BitTorrent link, the program will eventually check its email, find this message, extract the link, and then launch qBittorrent to start downloading the file. This way, you can have your home computer begin downloads while you’re away, and the (completely legal, not at all piratical) download can be finished by the time you return home. Chapter 17 covers how to launch programs on your computer using the `subprocess.Popen()` function. For example, the following call would launch the qBittorrent program, along with a torrent file:
+```
+qbProcess = subprocess.Popen(['C:\\Program Files (x86)\\qBittorrent\\qbittorrent.exe', 'shakespeare_complete_works.torrent'])
+```
+Of course, you’ll want the program to make sure the emails come from you. In particular, you might want to require that the emails contain a password, since it is fairly trivial for hackers to fake a “from” address in emails. The program should delete the emails it finds so that it doesn’t repeat instructions every time it checks the email account. As an extra feature, have the program email or text you a confirmation every time it executes a command. Since you won’t be sitting in front of the computer that is running the program, it’s a good idea to use the logging functions (see Chapter 11) to write a text file log that you can check if errors come up. qBittorrent (as well as other BitTorrent applications) has a feature where it can quit automatically after the download completes. Chapter 17 explains how you can determine when a launched application has quit with the `wait()` method for Popen objects. The `wait()` method call will block until qBittorrent has stopped, and then your program can email or text you a notification that the download has completed.
+
+Note: I prefer not to install qbittorent, therefore program uses requests module to download links sent via email. The file downloaded from the email link is a zip archive which is automatically extracted.
+
+[umbrella_reminder.py](https://github.com/mkoundo/Automate_the_Boring_Stuff/blob/master/chapter_18_Email_SMS/umbrella_reminder.py) - Chapter 12 showed you how to use the requests module to scrape data from https://weather.gov/. Write a program that runs just before you wake up in the morning and checks whether it’s raining that day. If so, have the program text you a reminder to pack an umbrella before leaving the house.
